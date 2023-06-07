@@ -1,0 +1,138 @@
+#contentDiv {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+}
+
+body,
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size:100%;
+}
+
+@media (min-width: 640px) {body {font: size 1rem;;}}
+@media (min-width: 960px) {body {font: size 1.2rem;;}}
+@media (min-width: 1100px) {body {font: size 1.5rem;;}}
+
+.parallax_nav {
+    background-image: url("assets/images/world2.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+
+
+    /* bottom border */
+    border-width: 20px;
+    border-color: black;
+    border-style: hidden hidden solid hidden;
+    background-color: black;
+
+    /* text */
+    color: aliceblue;
+
+    /* fit to all media types */
+    max-width: 100%;
+}
+
+.nav-link {
+    color: aliceblue;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.parallax {
+    background-image: url("assets/images/bitcoin.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+    /* expand image(div) to bottom of the page */
+    flex-grow: 1;
+
+    /* fit to all media types */
+    max-width: 100%;
+}
+
+
+
+form {
+    display: inline-flex;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.5);
+    font-weight: bold;
+}
+
+.yosef-img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+#chartContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-card-text {
+    font-weight: bold;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: black;
+    font-size: larger;
+}
+
+#aboutDiv {
+    align-self: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.msg {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: large;
+    margin: auto;
+
+}
+
+.btn {
+    background-image: linear-gradient(to bottom right, white, black, gold);
+}
+
+* {
+    /* fit to all media types */
+    max-width: 100%;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.1.js"></script>
+    <script src="canvas.js"></script>
+    <script defer src="main.js"></script>
+
+    <title>Crypto Currencies</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+
+
+
+<body>
+    <!-- start first parallax area -->
+    <div class="parallax_nav">
+        <!-- header -->
+        <br>
+        <br>
+        <h1>Crypto Currencies Information</h1>
+        <!-- navigation bar  -->
+        <nav class="navbar navbar-expand navbar-light ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!--navigation bar options: -->
+                    <li class="nav-item active">
+                        <a class="nav-link" id="currenciesLink" href="javascript:void(0)">Currencies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="reportsLink" href="javascript:void(0)">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="aboutLink" href="javascript:void(0)">About</a>
+                    </li>
+                </ul>
+                <!-- search -->
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" id="userSearchInput" type="search" placeholder="symbol"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 bg-light" id="searchButton"
+                        type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+      
+
+    </div>
+    <!-- end first parallax area -->
+
+    <!-- start second parallax area -->
+    <div class="parallax">
+        <!-- loading - spinner -->
+        <div id="spinner"></div>
+        <!-- content - DOM -->
+        <div id="contentDiv"></div>
+
+        <!-- Modal -  more than 5 coins chosen-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Selected coins:
+                        </h5>
+                        <button type="button" id="closeModal1" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div id="modalBody" class="modal-body">
+                        <p id="modalMsg">Please remove a coin before adding a new one. Only 5 coins are allowed.</p>
+                        <ul id="contentModalList" class="list-group">
+                            <!-- list of chosen coins will be added here -->
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="closeModal2" class="btn btn-dark mx-auto"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end second parallax area -->
+
+</body>
+
+</html>
